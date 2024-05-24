@@ -8,3 +8,4 @@ void struct_struct();//结构体嵌套结构体
 void struct_func();//结构体做函数参数
 void struct_const();//结构体中const的应用场景
 void struct_case1();//结构体案例1
+void struct_case2();//结构体案例1

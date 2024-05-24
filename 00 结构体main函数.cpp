@@ -4,7 +4,7 @@ using namespace std;
 
 
 int main() {
-	struct_case1();
+	struct_case2();
 
 	return 0;
 }
