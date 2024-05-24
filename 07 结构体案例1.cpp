@@ -26,10 +26,10 @@ struct teacher {
 };
 
 //信息录入函数
-void Arrayin(teacher * p) {
-	
+void Arrayin(teacher* p) {
+
 	//老师姓名、学生姓名和学生分数信息
-	string name_teacher[3] = {"王老师", "张老师", "刘老师"};
+	string name_teacher[3] = { "王老师", "张老师", "刘老师" };
 	string name_student[3][5] = {
 		{"王一","王二","王三","王四","王五"},
 		{"张一","张二","张三","张四","张五"},
@@ -43,9 +43,9 @@ void Arrayin(teacher * p) {
 	};
 
 	//将相关信息存入结构体变量中
-	
+
 	//老师循环
-	for (int i = 0; i < 3; i++) {	
+	for (int i = 0; i < 3; i++) {
 		//老师姓名信息存储
 		p->name = name_teacher[i];
 		//学生循环
@@ -64,11 +64,12 @@ void Arrayin(teacher * p) {
 void Arrayout(teacher* p) {
 	for (int i = 0; i < 3; i++) {
 		//输出老师姓名
-		cout << p->name << ':' << endl;
+		cout << p->name << "：" << endl;
 		for (int j = 0; j < 5; j++) {
 			//依次输出各学生的分数
-			cout << p->stu[j].name << ':'<< p->stu[j].score << endl;
+			cout << p->stu[j].name << "：" << p->stu[j].score << endl;
 		}
+		cout << endl;
 		p++;
 	}
 }
